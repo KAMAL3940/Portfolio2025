@@ -93,6 +93,8 @@
 	    nav:false,
 	    autoplayHoverPause: false,
 	    items: 1,
+		touchDrag: true,
+        mouseDrag: true,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{

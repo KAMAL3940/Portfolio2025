@@ -73,6 +73,7 @@ h5,
   width: 1110px;
   margin: 0 auto;
   padding: 0;
+  gap: 16px;
 }
 
 .ftco-navbar-light .navbar-brand {
@@ -218,9 +219,9 @@ h5,
   border: none;
   color: #ffffff !important;
   cursor: pointer;
-  padding-right: 0;
+  padding: 0;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 30px;
   letter-spacing: 0.1em;
 }
 
@@ -299,12 +300,16 @@ color: #ffff;
 
 .ftco-navbar-light.scrolled .navbar-toggler {
   border: none;
-  color: rgba(0, 0, 0, 0.5) !important;
-  border-color: rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff !important;
   cursor: pointer;
+  padding: 0;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 30px;
   letter-spacing: 0.1em;
+}
+
+.ftco-navbar-light.scrolled .navbar-toggler .oi-menu{
+color: #ffff;
 }
 
 .ftco-navbar-light.scrolled .nav-link {
@@ -418,6 +423,10 @@ color: #ffff;
   outline: none !important;
 }
 
+.home-slider {
+    -webkit-overflow-scrolling: touch;
+}
+
 .owl-carousel .owl-dots .owl-dot.active {
   background: #b3b3b3;
 }
@@ -451,6 +460,7 @@ color: #ffff;
   right: 0;
   background: #000000;
   opacity: 0;
+  pointer-events: none;
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
@@ -1340,6 +1350,11 @@ textarea.form-control {
   visibility: hidden;
 }
 
+.ftco-animate .btn {
+  position: relative;
+  z-index: 2;
+}
+
 .bg-primary {
   background:  #ffc107 !important;
 }
@@ -1583,6 +1598,21 @@ textarea.form-control {
   .heading-section h2 {
     font-size: 38px;
   }
+
+  .ftco-about .heading-section{
+    text-align: center;
+  }
+
+  .ftco-about .heading-section h1.big{
+        left: 24%;
+        top: 10px;
+        font-size: 60px;
+  }
+
+  .heading-section h1.big{
+     top: 10px;
+     font-size: 60px;
+  }
 }
 
 .heading-section.heading-section-white .subheading {
@@ -1698,6 +1728,7 @@ textarea.form-control {
   display: block;
   width: 100%;
   height: 350px;
+  border-radius: 4px;
 }
 
 .blog-entry {
@@ -1836,6 +1867,10 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.contact-section .contact-form .btn-primary{
+  margin-top: 2rem;
+}
+
 @media (max-width: 991.98px) {
   .contact-section .box {
     margin-bottom: 30px;
@@ -1884,7 +1919,7 @@ textarea.form-control {
 
 @media (max-width: 991.98px) {
   .contactBlc .contact-form{
-   border-radius: 4px 4px 0 0;
+    border-radius: 4px;
   }
   .ftco-footer-social{
     display: flex;
@@ -2325,6 +2360,22 @@ textarea.form-control {
 .popup-content.error .popup-icon {
   background: #ef4444;
   color: #fff;
+}
+
+.ftco_navbar .navbar-toggler .icon-close {
+  display: none;
+}
+
+.ftco_navbar .navbar-toggler .icon-menu {
+  display: inline;
+}
+
+.ftco_navbar .navbar-toggler[aria-expanded="true"] .icon-close {
+  display: inline;
+}
+
+.ftco_navbar .navbar-toggler[aria-expanded="true"] .icon-menu {
+  display: none;
 }
 
 @keyframes slideFade {
